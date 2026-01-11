@@ -1,0 +1,112 @@
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(59, 130, 246, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+    line-height: 1.1;
+}
+
+.highlight {
+    color: var(--primary);
+    background: linear-gradient(120deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%);
+    padding: 0 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.hero-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.upload-zone {
+    background: white;
+    border: 2px dashed var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-zone:hover {
+    border-color: var(--primary);
+    background: var(--bg-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.upload-zone.dragging {
+    border-color: var(--primary);
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.hidden-input {
+    display: none;
+}
+
+.upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-wrapper {
+    background: var(--bg-app);
+    padding: 1rem;
+    border-radius: 50%;
+    color: var(--primary);
+}
+
+.upload-text h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.25rem;
+}
+
+.upload-text p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.file-hint {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-app);
+    border-radius: 9999px;
+}
+
+.error-message {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background: #fef2f2;
+    color: var(--danger);
+    border: 1px solid #fee2e2;
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+}

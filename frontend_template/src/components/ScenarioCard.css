@@ -1,0 +1,100 @@
+.scenario-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    transition: all var(--transition-normal);
+}
+
+.scenario-card:hover {
+    border-color: var(--primary-light);
+    box-shadow: var(--shadow-sm);
+}
+
+.scenario-card.severe {
+    border-left: 4px solid var(--danger);
+}
+
+.scenario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.scenario-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.25rem;
+}
+
+.scenario-desc {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    max-width: 90%;
+}
+
+.loss-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    background: #fee2e2;
+    color: var(--danger);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.loss-badge.severe-badge {
+    background: #fecaca;
+    color: #b91c1c;
+}
+
+.pnl-section {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--bg-hover);
+}
+
+.pnl-label {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.pnl-value {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--danger);
+}
+
+.drivers-section {
+    font-size: 0.875rem;
+}
+
+.drivers-label {
+    color: var(--text-light);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.drivers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.driver-tag {
+    background: var(--bg-hover);
+    padding: 0.125rem 0.5rem;
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-family: monospace;
+}

@@ -1,0 +1,7 @@
+Asset Class,Ticker,Name,Quantity,Market Price,Market Value,Sector,Duration,Rating,Liquidity Score
+Equity,AAPL,Apple Inc.,100,150.00,15000.00,Technology,0,NR,10
+Fixed Income,UST10Y,US Treasury 10Y,50,98.50,4925.00,Government,9.5,AAA,10
+Corporate Bond,JPM25,JPM Bond 2025,200,102.00,20400.00,Financials,3.2,AA,8
+Equity,MSFT,Microsoft Corp,80,300.00,24000.00,Technology,0,NR,10
+Fixed Income,HYB,High Yield Bond Fund,500,45.00,22500.00,Financials,4.5,BB,7
+wc,C,Citigroup Inc.,300,45.00,13500.00,Financials,0,NR,9
